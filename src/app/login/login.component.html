@@ -1,0 +1,14 @@
+<div class="main-container">
+
+    <h1>Sign in</h1>
+    <div class="line-container">
+        <input type="text" [(ngModel)]="user.name" placeholder="Username" />
+    </div>
+    <div class="line-container">
+        <input type="password" [(ngModel)]="user.pw" placeholder="Password" />
+    </div>
+    <div class="line-container">
+        <button class="button" (click)="validateUser()">login</button>
+        <button class="button" (click)="addUser()">Register</button>
+    </div>
+</div>

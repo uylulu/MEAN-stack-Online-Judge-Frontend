@@ -1,0 +1,10 @@
+<div #main>
+    <h1 class="header">Problems</h1>
+    <div id="problem-list">
+        <ul>
+            <li *ngFor="let problem of problems" style="background-color: {{problem.status}};">
+                <a [routerLink]="['/problem', problem._id]">{{problem.name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

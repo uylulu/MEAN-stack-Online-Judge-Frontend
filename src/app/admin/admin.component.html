@@ -1,0 +1,11 @@
+<form action="">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" [(ngModel)]="problem.name">
+    <label for="legend">Legend</label>
+    <input type="text" name="legend" id="legend" [(ngModel)]="problem.legend">
+    <label for="cppSolution">cppSolution</label>
+    <textarea name="cppSolution" id="" cols="30" rows="10" [(ngModel)]="problem.cppSolution"></textarea>
+    <label for="cppGenerator">cppGenerator</label>
+    <textarea name="cppGenerator" id="" cols="30" rows="10" [(ngModel)]="problem.cppGenerator"></textarea>
+    <button (click)="addProblem()">Add Problem</button>
+</form>

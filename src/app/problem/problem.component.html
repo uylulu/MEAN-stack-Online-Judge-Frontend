@@ -1,0 +1,18 @@
+<div class="main-container">
+    <div class="side-container"></div>
+
+    <div class="mid-container">
+        <div>
+            <h1 class="name">{{header}}</h1>
+        </div>
+        <hr/>
+        <p class="problem-legend">{{problem.legend}}</p>
+    
+        <form action="">
+            <textarea name="solution" id="" cols="30" rows="10" placeholder="Your C++ code goes here" [(ngModel)]="solution"></textarea>
+            <button (click)="submitSolution()">Submit</button>
+        </form>
+    </div>
+
+    <div class="side-container"></div>
+</div>
