@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Problem } from 'src/models/problem.model';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
     providedIn: 'root'
 })
 export class ProblemService {
-    baseUrl: string = 'http://localhost:3000/db'
+    baseUrl: string = environment.baseUrl + '/db'
 
     constructor(private http: HttpClient) { 
     }
